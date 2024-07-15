@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../Lato/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../Roboto/Roboto-Regular.ttf);
+}
+@keyframes move {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes info_move {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+    right: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    right: 120px;
+    top: 60px;
+  }
+}
+@keyframes photo_move {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+    left: 200px;
+    top: 240px;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    top: 220px;
+    left: 180px;
+  }
+}
+@keyframes gray_move {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+    top: 0px;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    top: 110px;
+    left: 110px;
+  }
+}
+@keyframes orange_move {
+  0% {
+    transform: scale(0.1);
+    bottom: 0px;
+    left: 600px;
+  }
+  100% {
+    transform: scale(1);
+    bottom: 125px;
+    left: 195px;
+  }
+}
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(0deg, rgba(41, 46, 51, 0.65), rgba(41, 46, 51, 0.65)), url("https://assets.nicepagecdn.com/d2cc3eaa/5380758/images/high-angle-shot-beautiful-sunrise-italian-alps-italy--545346.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-top: 100px;
+  position: relative;
+}
+.main-container h4 {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: 400;
+  height: 24px;
+  letter-spacing: 3px;
+  line-height: 24px;
+}
+.main-container img {
+  width: 357px;
+  height: 106px;
+}
+.main-container h1 {
+  font-family: Lato;
+  font-size: 66px;
+  font-weight: 700;
+  height: 210px;
+  line-height: 85px;
+  padding: 0 300px;
+}
+.main-container h3 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  line-height: 45px;
+  margin-bottom: 50px;
+}
+.main-container a {
+  text-decoration: none;
+  border: 2px solid white;
+  font-weight: 700;
+  height: 73px;
+  letter-spacing: 1px;
+  line-height: 28px;
+  border-radius: 50px;
+  padding: 20px 55px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  transition: 1.5s;
+}
+.main-container a:hover {
+  background-color: white;
+  color: black;
+}
+
+.second-container {
+  width: 100%;
+  height: 110vh;
+  background-color: #293233;
+  position: relative;
+}
+.second-container .info {
+  width: 494px;
+  height: 700px;
+  position: absolute;
+  right: 120px;
+  top: 60px;
+  border-radius: 60px;
+  background-color: rgb(255, 255, 255);
+  padding: 160px 40px;
+  text-align: center;
+  color: rgb(17, 17, 17);
+}
+.second-container .info h2 {
+  color: rgb(17, 17, 17);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 66px;
+}
+.second-container .info p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 36px;
+  margin-top: 20px;
+}
+.second-container .info .hr {
+  width: 344px;
+  height: 3px;
+  margin: 20px auto;
+  background: rgb(245, 141, 84);
+}
+.second-container .info h5 {
+  font-family: Montserrat, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 39.599998px;
+}
+.second-container .info h5 span {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+}
+.second-container .photo-box {
+  position: absolute;
+  top: 220px;
+  left: 180px;
+  width: 468px;
+  height: 468px;
+  border-radius: 50%;
+}
+.second-container .photo-box img {
+  width: 468px;
+  height: 468px;
+  border-radius: 50%;
+}
+.second-container .orange-box {
+  position: absolute;
+  width: 117px;
+  height: 117px;
+  background-color: rgb(245, 141, 84);
+  border-radius: 50%;
+  bottom: 125px;
+  left: 195px;
+  z-index: 2;
+}
+.second-container .gray-box {
+  position: absolute;
+  top: 110px;
+  left: 110px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: rgb(67, 81, 82);
+  padding: 30px;
+}
+.second-container .gray-box .inside-box {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #293233;
+}
+
+.third-container {
+  width: 100%;
+  height: 110vh;
+  background-color: #293233;
+  padding-top: 100px;
+}
+.third-container .text {
+  text-align: center;
+  margin: 50px 0;
+}
+.third-container .text h2 {
+  font-size: 60px;
+  font-weight: 700;
+  height: 66px;
+  line-height: 66px;
+  color: rgb(255, 255, 255);
+  animation: move 3s;
+}
+.third-container .form {
+  display: flex;
+  flex-direction: column;
+}
+.third-container .form input {
+  width: 300px;
+  height: 40px;
+  background-color: rgb(67, 81, 82);
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  font-size: 18px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+.third-container .form textarea {
+  background-color: rgb(67, 81, 82);
+  margin: 40px auto;
+  border: none;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+.third-container .form button {
+  width: 650px;
+  height: 60px;
+  margin: 20px auto;
+  border-radius: 40px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: rgb(245, 141, 84);
+}
+.third-container .form button:hover {
+  background-color: rgb(67, 81, 82);
+}/*# sourceMappingURL=style.css.map */

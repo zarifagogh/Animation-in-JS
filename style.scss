@@ -1,0 +1,233 @@
+@import "__defaults";
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(0deg, rgba(41, 46, 51, 0.65), rgba(41, 46, 51, 0.65)), url('https://assets.nicepagecdn.com/d2cc3eaa/5380758/images/high-angle-shot-beautiful-sunrise-italian-alps-italy--545346.jpg');
+    object-fit: cover;
+    display: block;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 100px;
+    position: relative;
+
+    h4 {
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 400;
+        height: 24px;
+        letter-spacing: 3px;
+        line-height: 24px;
+    }
+
+    img {
+        width: 357px;
+        height: 106px;
+    }
+
+    h1 {
+        font-family: Lato;
+        font-size: 66px;
+        font-weight: 700;
+        height: 210px;
+        line-height: 85px;
+        padding: 0 300px;
+
+    }
+
+    h3 {
+        font-family: Roboto;
+        font-size: 24px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        line-height: 45px;
+        margin-bottom: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        border: 2px solid white;
+        font-weight: 700;
+        height: 73px;
+        letter-spacing: 1px;
+        line-height: 28px;
+        border-radius: 50px;
+        padding: 20px 55px;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        transition: 1.5s;
+
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+.second-container {
+    width: 100%;
+    height: 110vh;
+    background-color: #293233;
+    position: relative;
+
+    .info {
+        width: 494px;
+        height: 700px;
+        position: absolute;
+        right: 120px;
+        top: 60px;
+        border-radius: 60px;
+        background-color: rgb(255, 255, 255);
+        padding: 160px 40px;
+        text-align: center;
+        color: rgb(17, 17, 17);
+
+        h2 {
+            color: rgb(17, 17, 17);
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 66px;
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 18px;
+            line-height: 36px;
+            margin-top: 20px;
+        }
+
+        .hr {
+            width: 344px;
+            height: 3px;
+            margin: 20px auto;
+            background: rgb(245, 141, 84);
+            ;
+        }
+
+        h5 {
+            font-family: Montserrat, sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 39.599998px;
+
+            span {
+                font-family: Montserrat, sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .photo-box {
+        position: absolute;
+        top: 220px;
+        left: 180px;
+        width: 468px;
+        height: 468px;
+        border-radius: 50%;
+
+        img {
+            width: 468px;
+            height: 468px;
+            border-radius: 50%;
+        }
+
+
+    }
+
+    .orange-box {
+        position: absolute;
+        width: 117px;
+        height: 117px;
+        background-color: rgb(245, 141, 84);
+        border-radius: 50%;
+        bottom: 125px;
+        left: 195px;
+        z-index: 2;
+    }
+
+    .gray-box {
+        position: absolute;
+        top: 110px;
+        left: 110px;
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        background-color: rgb(67, 81, 82);
+        padding: 30px;
+
+        .inside-box {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background-color: #293233;
+
+        }
+    }
+}
+
+.third-container {
+    width: 100%;
+    height: 110vh;
+    background-color: #293233;
+    padding-top: 100px;
+
+    .text {
+        text-align: center;
+        margin: 50px 0;
+
+        h2 {
+            font-size: 60px;
+            font-weight: 700;
+            height: 66px;
+            line-height: 66px;
+            color: rgb(255, 255, 255);
+            animation: move 3s;
+        }
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            width: 300px;
+            height: 40px;
+            background-color: rgb(67, 81, 82);
+            border: none;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            font-size: 18px;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        textarea {
+            background-color: rgb(67, 81, 82);
+            margin: 40px auto;
+            border: none;
+            border-bottom: 2px solid rgb(255, 255, 255);
+            font-size: 20px;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+        }
+
+        button {
+            width: 650px;
+            height: 60px;
+            margin: 20px auto;
+            border-radius: 40px;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            background-color: rgb(245, 141, 84);
+
+            &:hover {
+                background-color: rgb(67, 81, 82);
+            }
+        }
+    }
+}
